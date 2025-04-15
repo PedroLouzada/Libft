@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:27:41 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/14 19:33:42 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:23:29 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ static int	num_len(int n)
 
 char	*ft_itoa(int n)
 {
-	int len;
-	char *str;
-	unsigned int num;
+	int				len;
+	char			*str;
+	unsigned int	num;
 
 	len = num_len(n);
 	str = (char *)malloc((len + 1) * sizeof(char));

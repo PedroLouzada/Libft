@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 13:17:17 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/14 15:29:39 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:24:20 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ static char	*sep_word(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int i;
-	char **str;
+	int		i;
+	char	**str;
 
 	if (!s)
 		return (NULL);

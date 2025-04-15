@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 19:55:36 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/12 20:13:18 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:24:27 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static char	*ft_strcpy(char *dest, const char *src)
 
 char	*ft_strdup(const char *s)
 {
-	char *copy;
+	char	*copy;
 
 	copy = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!copy)

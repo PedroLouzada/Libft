@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:51:09 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/13 18:25:21 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:25:04 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *str;
+	char	*str;
 
 	if (!s)
 		return (NULL);

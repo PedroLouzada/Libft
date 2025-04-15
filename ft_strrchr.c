@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:18:07 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/12 16:31:53 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:24:58 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(str) - 1;
 	if (c == '\0')
