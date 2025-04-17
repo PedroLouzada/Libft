@@ -6,13 +6,16 @@
 #    By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 19:19:37 by pbongiov          #+#    #+#              #
-#    Updated: 2025/04/15 15:04:43 by pbongiov         ###   ########.fr        #
+#    Updated: 2025/04/17 20:07:13 by pbongiov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
 CC = cc
+
 CFLAGS = -Wall -Wextra -Werror
+
 SRCS_FILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 			 ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c ft_bzero.c\
 			 ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_strchr.c\
@@ -23,16 +26,21 @@ SRCS_FILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 
 OBJS = $(SRCS_FILES:.c=.o)
 
+BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
+			 ft_lstadd_back.c\
+
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: srcs/%.c
-	$(CC) $(CFLAGS)-c $(SRCS_FILES)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
@@ -40,3 +48,8 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re 
+
+bonus: $(NAME)
+
+$(NAME): $(BONUS_OBJS)
+	ar rcs $(NAME) $(BONUS_OBJS)
