@@ -6,7 +6,7 @@
 #    By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 19:19:37 by pbongiov          #+#    #+#              #
-#    Updated: 2025/04/17 20:07:13 by pbongiov         ###   ########.fr        #
+#    Updated: 2025/04/18 11:45:16 by pbongiov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS_FILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 OBJS = $(SRCS_FILES:.c=.o)
 
 BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-			 ft_lstadd_back.c\
+			 ft_lstadd_back.c ft_lstdelone.c\
 
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
