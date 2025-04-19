@@ -6,9 +6,11 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 19:33:36 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:22:46 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 16:12:31 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -17,3 +19,8 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_isdigit('5'));
+}*/

@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 18:34:05 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:18:53 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 16:10:42 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,9 @@ int	ft_atoi(const char *str)
 	}
 	return (n * sign);
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_atoi((char *)""));
+	return (0);
+}*/

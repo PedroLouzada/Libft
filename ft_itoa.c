@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:27:41 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:23:29 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 18:32:43 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,11 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+/*
+int	main(void)
+{
+	char *s = ft_itoa(123);
+
+	printf("%s", s);
+	free(s);
+}*/

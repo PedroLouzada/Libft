@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 16:28:00 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:20:01 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 15:35:04 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,20 @@ void	ft_bzero(void *s, size_t len)
 		i++;
 	}
 }
+/*
+int	main(void)
+{
+	char *s = (char *)malloc(10);
+	int len = 9;
+
+	if (!s)
+		return (0);
+	ft_bzero(s, len);
+	while (len > 0)
+	{
+		printf("%c", *s);
+		len--;
+		s++;
+	}
+	return (0);
+}*/

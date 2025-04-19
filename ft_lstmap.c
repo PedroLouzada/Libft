@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 16:16:04 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/18 16:58:09 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 14:43:47 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_elem;
-	t_list *new_list;
+	t_list	*new_elem;
+	t_list	*new_list;
 
 	new_list = NULL;
 	if (!lst || !f || !del)

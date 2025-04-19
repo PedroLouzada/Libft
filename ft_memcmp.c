@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 17:37:39 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:23:48 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 20:05:52 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/*
+int	main(void)
+{
+	char *s1 = "abcdef";
+	char *s2 = "abcdefghi";
+
+	printf("%d", ft_memcmp(s1, s2, 6));
+}*/

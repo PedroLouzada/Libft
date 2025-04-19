@@ -6,9 +6,11 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 19:35:47 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/11 16:20:08 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/19 16:10:51 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -18,3 +20,8 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_isalnum('%'));
+}*/
