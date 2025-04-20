@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 16:55:36 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/19 22:35:49 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 19:11:33 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (unsigned char *)src;
 	if (!dest && !src)
 		return (NULL);
-	if (d > s)
+	if (d > s && d <= s + n)
 	{
 		i = n;
 		while (i-- > 0)
@@ -39,3 +39,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
+/*
+int	main(void)
+{
+	char s[] = "0123456789";
+
+	printf("%s", (char *)ft_memmove(s + 3, s, 9));
+}*/

@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 19:38:24 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/19 16:10:58 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 17:17:56 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,4 @@ int	ft_isascii(int c)
 int	main(void)
 {
 	printf("%d", ft_isascii(-1));
-}/*
+}*/

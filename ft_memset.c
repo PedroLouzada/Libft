@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 11:46:55 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:02 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 16:50:07 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+/*
+int	main(void)
+{
+	char *s;
+
+	s = malloc(5);
+	printf("%s", (char *)ft_memset(s, '0', 5));
+	free(s);
+}*/

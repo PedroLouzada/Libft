@@ -6,9 +6,11 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 12:23:44 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:25:07 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 19:17:32 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -16,3 +18,8 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
+/*
+int	main(void)
+{
+	printf("%c", ft_tolower('C'));
+}*/

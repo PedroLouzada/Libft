@@ -6,13 +6,20 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 12:08:35 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:25:11 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 19:19:33 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(int c)
+#include "libft.h"
+
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;
 	return (c);
 }
+/*
+int	main(void)
+{
+	printf("%c", ft_toupper('c'));
+}*/

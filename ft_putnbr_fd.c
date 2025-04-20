@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 14:56:08 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:13 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 19:13:11 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,8 @@ void	ft_putnbr_fd(int n, int fd)
 	c = n % 10 + '0';
 	write(fd, &c, 1);
 }
+/*
+int	main(void)
+{
+	ft_putnbr_fd(-2147483648, 1);
+}*/

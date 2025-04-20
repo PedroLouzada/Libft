@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 14:37:03 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:06 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/20 16:51:22 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,8 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+/*
+int	main(void)
+{
+	ft_putchar_fd('p', 1);
+}*/
