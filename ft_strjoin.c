@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 18:21:12 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:34 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:08:33 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, (char *)s2, size + 1);
 	return (str);
 }
+/*
+int	main(void)
+{
+	char *str = ft_strjoin("testando ", "teste");
+	printf ("%s", str);
+	free(str);
+}*/

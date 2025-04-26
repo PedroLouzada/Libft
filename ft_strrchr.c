@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:18:07 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:58 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:37:51 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,8 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	printf("%s", ft_strrchr("testando o teste", 's'));
+}/*

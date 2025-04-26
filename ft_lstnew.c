@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 16:37:28 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/19 14:43:50 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 20:49:29 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+/*
+int	main(void)
+{
+	t_list *head = ft_lstnew("Primeiro");
+
+	printf("%s", (char *)head->content);
+}*/

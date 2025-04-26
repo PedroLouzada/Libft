@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:41:07 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:50 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:29:14 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,8 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (0);
 }
+/*
+int main()
+{
+	printf("%d", ft_strncmp("123457", "123456", 6));
+}*/

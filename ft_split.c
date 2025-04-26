@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 13:17:17 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/18 13:29:24 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 18:50:28 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,16 +48,23 @@ static char	*sep_word(const char *s, char c)
 	return (word);
 }
 
-char	**ft_split(char const *s, char c)
+static void	ft_free(char **str)
 {
-	int		i;
-	char	**str;
+	int	i;
 
-	if (!s)
-		return (NULL);
-	str = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!str)
-		return (NULL);
+	i = 0;
+	while (str[i])
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+}
+
+static char	**ft_lesslines(char **str, char const *s, char c)
+{
+	int	i;
+
 	i = 0;
 	while (*s)
 	{
@@ -65,7 +72,10 @@ char	**ft_split(char const *s, char c)
 		{
 			str[i] = sep_word(s, c);
 			if (!str[i])
+			{
+				ft_free(str);
 				return (NULL);
+			}
 			i++;
 			while (*s && *s != c)
 				s++;
@@ -76,3 +86,27 @@ char	**ft_split(char const *s, char c)
 	str[i] = NULL;
 	return (str);
 }
+
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+
+	if (!s)
+		return (NULL);
+	str = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!str)
+		return (NULL);
+	return (ft_lesslines(str, s, c));
+}
+/*
+int	main(void)
+{
+	char **s = ft_split("testando o teste", ' ');
+	char **str = s;
+	while (*str)
+	{
+		ft_putendl_fd(*str, 1);
+		str++;
+	}
+	ft_free(s);
+}*/

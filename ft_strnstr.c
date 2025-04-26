@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 18:16:08 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:55 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:35:13 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	}
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	printf("%s", ft_strnstr("o rato de roma", "rato", 6));
+}*/

@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 19:55:36 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:27 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:08:40 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ char	*ft_strdup(const char *s)
 	ft_strcpy(copy, s);
 	return (copy);
 }
+/*
+int	main(void)
+{
+	char *s = ft_strdup("teste");
+	printf("%s", s);
+	free(s);
+}*/

@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 18:30:52 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:47 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 20:01:52 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
+/*
+char	to_up(unsigned int i, char c)
+{
+	(void)i;
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
+}
+
+int	main(void)
+{
+	char *str = ft_strmapi("teste do teste", to_up);
+	printf("%s", str);
+	free(str);
+}*/

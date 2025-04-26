@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 19:50:33 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/15 15:24:44 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:27:56 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,8 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+/*
+int	main(void)
+{
+	printf("%zu", ft_strlen("0123456789"));
+}*/
