@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 16:46:13 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/19 22:27:11 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 13:52:51 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 /*
 int	main(void)
 {
-	char *src = "teste";
-	char dest[50];
+	char dest[20];
 
-	ft_memcpy(dest, src, 3);
-	printf("%s", dest);
+	printf("Meu: %s\n", (char *)ft_memcpy(dest, "teste", 3));
 }*/

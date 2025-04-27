@@ -6,7 +6,7 @@
 #    By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 19:19:37 by pbongiov          #+#    #+#              #
-#    Updated: 2025/04/18 16:31:36 by pbongiov         ###   ########.fr        #
+#    Updated: 2025/04/27 14:11:53 by pbongiov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,10 @@ NAME = libft.a
 CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
+
+AR = ar rcs
+
+RM = rm -f
 
 SRCS_FILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 			 ft_memset.c ft_strlen.c ft_tolower.c ft_toupper.c ft_bzero.c\
@@ -35,20 +39,22 @@ BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
+	$(RM) -rf bonus
 
 re: fclean all
 
 .PHONY: all clean fclean re 
 
-bonus: $(OBJS) $(BONUS_OBJS)
-	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+bonus: $(BONUS_OBJS) $(NAME)
+	$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
+	touch bonus

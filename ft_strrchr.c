@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:18:07 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/26 19:37:51 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 14:06:39 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *str, int c)
 	int	i;
 
 	i = ft_strlen(str) - 1;
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)&str[i + 1]);
 	while (i >= 0)
 	{
@@ -31,4 +31,4 @@ char	*ft_strrchr(const char *str, int c)
 int	main(void)
 {
 	printf("%s", ft_strrchr("testando o teste", 's'));
-}/*
+}*/

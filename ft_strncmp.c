@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:41:07 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/26 19:29:14 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 13:44:43 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	while ((str1[i] || str2[i]) && i < n)
 	{
 		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 		i++;
 	}
 	return (0);
@@ -28,5 +28,5 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 /*
 int main()
 {
-	printf("%d", ft_strncmp("123457", "123456", 6));
+	printf(%d\n", ft_strncmp("test\200", "test\0", 6));
 }*/

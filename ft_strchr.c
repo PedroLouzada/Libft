@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 12:34:45 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/26 18:54:25 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 14:05:54 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)&str[i]);
 		i++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0' && str[i] == '\0')
 		return ((char *)&str[i]);
 	return (NULL);
 }

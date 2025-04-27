@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 18:42:58 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/26 19:40:35 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 13:54:36 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_check(s1[end - 1], set) != 0)
 		end--;
 	str = (char *)malloc((end - start + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	ft_strlcpy(str, s1 + start, end - start + 1);
 	return (str);
 }
 /*
-int main()
+int	main(void)
 {
 	printf("%s", ft_strtrim("adwasdawdPedrodwasdawsd", "wasd"));
 }*/

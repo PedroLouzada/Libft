@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 16:16:04 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/19 14:43:47 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 12:59:21 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,44 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+/*
+void	del(void *lst)
+{
+	(void)lst;
+}
+
+void	*to_up(void *s)
+{
+	char	*str;
+	char	*copy;
+
+	copy = ft_strdup(s);
+	str = copy;
+	while(*str)
+	{
+		if (*str >= 'a' && *str <= 'z')
+			*str -= 32;
+		str++;
+	}
+	return (copy);
+}
+
+int	main(void)
+{
+	t_list *head = ft_lstnew("Primeiro");
+	t_list *node1 = ft_lstnew("Segundo");
+	t_list *node2 = ft_lstnew("Terceiro");
+	t_list *newhead;
+	t_list *print;
+	head->next = node1;
+	node1->next = node2;
+	newhead = ft_lstmap(head, to_up, del);
+	print = newhead;
+	while(print)
+	{
+		printf("%s\n", (char *)print->content);
+		print = print->next;
+	}
+	free(newhead);
+	return (0);
+}*/
