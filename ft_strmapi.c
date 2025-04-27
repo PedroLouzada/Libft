@@ -6,7 +6,7 @@
 /*   By: pbongiov <pbongiov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 18:30:52 by pbongiov          #+#    #+#             */
-/*   Updated: 2025/04/26 20:01:52 by pbongiov         ###   ########.fr       */
+/*   Updated: 2025/04/27 19:25:55 by pbongiov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	str = (char *)malloc(ft_strlen(s) + 1 * sizeof(char));
 	if (!str)
